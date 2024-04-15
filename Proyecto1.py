@@ -10,7 +10,6 @@ print()
 
 
 def mostrar(Gusanos):
-    print()
     print("-------------")
     print(f"FB: {Gusanos[0]} | AR: {Gusanos[1]}")
     print("-------------")
@@ -33,7 +32,7 @@ def Pesticida(Gusanos):
 
 def Vientecito(Gusanos):
     Ubi = random.randint(0,3)
-    print(f"Un viento mágico ha soplado en la ubicación {Ubi} reviviendo 10 gusanos")
+    print(f"Un viento mágico ha soplado en una ubicacion reviviendo 10 gusanos...")
     Gusanos[Ubi] += 10
     print()
 
@@ -75,6 +74,8 @@ def Misterio(Gusanos):
         elif(Accion == 5):
             print("5.) Escuchar la cantaleta de la tia")
             La_tia(Gusanos)
+        else:
+            print("Opcion invalida")
             
 def Terminar(Gusanos):
     if Gusanos[0] == 0 and Gusanos[1] == 0 and Gusanos[2] == 0 and Gusanos[3] == 0:
@@ -111,3 +112,5 @@ while(True):
   elif(Accion == 7):
     if Terminar(Gusanos):
         break
+  else:
+    print("Opcion invalida")
