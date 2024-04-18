@@ -2,10 +2,10 @@ import random
 
 Gusanos = []
 print("--Creando los gusanos en las ubicaciones--")
-Gusanos.append(int(input("Ingrese la cantidad de Gusanos FB: ")))
-Gusanos.append(int(input("Ingrese la cantidad de Gusanos AR: ")))
-Gusanos.append(int(input("Ingrese la cantidad de Gusanos NA: ")))
-Gusanos.append(int(input("Ingrese la cantidad de Gusanos PP: ")))
+Gusanos.append(int(input("Ingrese la cantidad de Gusanos Fondo de Bikini: ")))
+Gusanos.append(int(input("Ingrese la cantidad de Gusanos Arrakis: ")))
+Gusanos.append(int(input("Ingrese la cantidad de Gusanos Namekusei: ")))
+Gusanos.append(int(input("Ingrese la cantidad de Gusanos Pueblo Paleta: ")))
 print()
 
 
