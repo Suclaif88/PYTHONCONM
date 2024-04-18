@@ -32,22 +32,22 @@ def Pesticida(Gusanos):
 
 def Vientecito(Gusanos):
     Ubi = random.randint(0,3)
-    print(f"Un viento mágico ha soplado en una ubicacion reviviendo 10 gusanos...")
+    print("Un viento mágico ha soplado en una ubicacion reviviendo 10 gusanos...")
     Gusanos[Ubi] += 10
     print()
 
 def lluviaA(Gusanos):
     posicionN = int(input("Ingrese la ubicación de la nube (0, 1, 2 ó 3): "))
-    Gusanos[posicionN] = Gusanos[posicionN] = 0
+    Gusanos[posicionN] = 0
     print()
 
 def La_tia(Gusanos):
-    print("No hagas a los demás lo que no quieres que te hagan a ti!!")
+    print("¡¡No hagas a los demás lo que no quieres que te hagan a ti!!")
     Gusanos[0] += 5
     Gusanos[1] += 5
     Gusanos[2] += 5
     Gusanos[3] += 5
-    print("La tia agrego 5 gusanos a todas la ubicaciones")
+    print("La tia agrego 5 gusanos a todas la ubicaciones ¡¡¡portate bien!!!")
     print()
     
 def Misterio(Gusanos):
@@ -56,6 +56,10 @@ def Misterio(Gusanos):
     Op_elegido = random.choice(Op)
     if Op_elegido == Op[0]:
         print(Op_elegido)
+        Gusanos[0] = 0
+        Gusanos[1] = 0
+        Gusanos[2] = 0
+        Gusanos[3] = 0
     else:
         print(Op_elegido)
         Accion = random.randint(1,5)
@@ -74,8 +78,6 @@ def Misterio(Gusanos):
         elif(Accion == 5):
             print("5.) Escuchar la cantaleta de la tia")
             La_tia(Gusanos)
-        else:
-            print("Opcion invalida")
             
 def Terminar(Gusanos):
     if Gusanos[0] == 0 and Gusanos[1] == 0 and Gusanos[2] == 0 and Gusanos[3] == 0:
@@ -83,7 +85,7 @@ def Terminar(Gusanos):
         return True
     else:
         print()
-        print("Aun no acabas con todos los gusanos!!!")
+        print("¡¡¡Aún no acabas con todos los gusanos!!!")
 
 while(True):
   mostrar(Gusanos)
@@ -113,4 +115,4 @@ while(True):
     if Terminar(Gusanos):
         break
   else:
-    print("Opcion invalida")
+    print("Opción inválida")
