@@ -83,12 +83,12 @@ def Terminar(Gusanos):
     if Gusanos[0] == 0 and Gusanos[1] == 0 and Gusanos[2] == 0 and Gusanos[3] == 0:
         print("¡Felicitaciones salvaste la Galaxia!")
         return True
-    else:
-        print()
-        print("¡¡¡Aún no acabas con todos los gusanos!!!")
+    return False
 
 while(True):
   mostrar(Gusanos)
+  if Terminar(Gusanos):
+        break
   print("--Ingrese--")
   print("1.) Para disparar a gusanos de una ubicación particular")
   print("2.) Para lanzar pesticida a todos los gusanos de todas las ubicaciónes")
@@ -96,7 +96,6 @@ while(True):
   print("4.) Para enviar una lluvia acida")
   print("5.) Para escuchar la cantaleta de la tia")
   print("6.) ???")
-  print("7.) Terminar juego")
   
   Accion = int(input())
   if(Accion == 1):
@@ -111,8 +110,5 @@ while(True):
     La_tia(Gusanos)
   elif(Accion == 6):
     Misterio(Gusanos)
-  elif(Accion == 7):
-    if Terminar(Gusanos):
-        break
   else:
     print("Opción inválida")
