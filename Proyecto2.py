@@ -48,7 +48,7 @@ def La_tia(Gusanos):
     Frases = ["¡No olviden lavarse bien las manos después de jugar con los gusanos!",
               "¡Cuidado con esos gusanitos! Son criaturas de Dios",
               "¡¡No hagas a los demás lo que no quieres que te hagan a ti!!",
-              "¡Qué lindo verlos jugar con los gusanos! Pero no le hagan daño a los gusanos"]
+              "¡Qué lindo verlos jugar con los gusanos! Pero no les hagan daño"]
     print(random.choice(Frases))
     print()
     Gusanos[0] += 5
